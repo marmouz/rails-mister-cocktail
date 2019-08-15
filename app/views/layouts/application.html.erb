@@ -12,7 +12,19 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-betwwen">
+      <a class="navbar-brand" href= "#">750cL</a>
+      <div class="ml-auto flex" >
+        <a class="btn btn-outline-primary text-primary" href= "/cocktails/new">Add Cocktail</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
     <%= javascript_pack_tag "application" %>
   </body>
 </html>
