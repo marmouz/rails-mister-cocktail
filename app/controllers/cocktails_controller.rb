@@ -9,12 +9,15 @@ class CocktailsController < ApplicationController
 
   def show
     @cocktail = Cocktail.find(params[:id])
-    console
   end
 
   def create
     @cocktail = Cocktail.create(cocktail_params)
-    redirect_to @cocktail
+    if @cocktail.valid?
+      redirect_to @cocktail
+    else
+      render :new
+    end
   end
 
   private
