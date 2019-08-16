@@ -1,3 +1,13 @@
+.navbar {
+  background-color: white;
+  border-bottom: 0.5px solid $blue;
+  .navbar-brand{
+    font-size: 2em;
+    font-family: $headers-font;
+    font-weight: 700;
+  }
+}
+
 
 .navbar.btn a{
   color: $blue;

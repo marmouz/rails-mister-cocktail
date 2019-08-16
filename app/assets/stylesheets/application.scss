@@ -13,4 +13,8 @@
 @import "pages/index";
 
 //Pages CSS
-@import "cocktails"
+@import "cocktails";
+
+body {
+  height: 100vh;
+}

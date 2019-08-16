@@ -12,17 +12,18 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light d-flex justify-content-betwwen">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top px-3">
       <a class="navbar-brand" href= "/">750cL</a>
       <div class="ml-auto flex" >
         <a class="btn btn-outline-primary" href= "/cocktails/new">Add Cocktail</a>
       </div>
     </nav>
-    <div class="container">
-      <div class="row justify-content-center">
+    <div class="container bg-white h-100">
+      <div class="row justify-content-center h-100">
           <%= yield %>
       </div>
     </div>
+    <%= stylesheet_pack_tag 'application' %>
     <%= javascript_pack_tag "application" %>
   </body>
 </html>

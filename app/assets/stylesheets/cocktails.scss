@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 h1 {
-  color:#164693;
+  color: $blue;
   font-weight: 700;
   text-align: center;
   margin: 1em 0;
@@ -11,10 +11,10 @@ h1 {
 
 .list_ingredient {
   padding: 1em;
-  margin-top: 3em;
-  background-color: rgba(227, 235, 247, 0.4);
+  margin: 1em 0;
+  background-color: $light-blue;
   border-radius: 4px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   ul {
     margin: 2em;
   }
