@@ -4,7 +4,7 @@
       <h1><%= @cocktail.name %></h1>
     </div>
   </div>
-  <div class="list_ingredient">
+  <div class="list_ingredient d-flex flex-column">
     <h2>List of Ingredients</h2>
     <ul>
     <% @cocktail.doses.each do |dose| %>
@@ -14,6 +14,8 @@
     <% end %>
     </ul>
   </div>
-  <%= link_to "Back to List", cocktails_path %>
-  <%= link_to "add a ingredient", new_cocktail_dose_path(@cocktail.id)  %>
+  <div class="link">
+    <%= link_to "Back to List", cocktails_path, class: "btn btn-outline-primary" %>
+    <%= link_to "add a ingredient", new_cocktail_dose_path(@cocktail.id), class: "btn btn-outline-primary"  %>
+  </div>
 </div>

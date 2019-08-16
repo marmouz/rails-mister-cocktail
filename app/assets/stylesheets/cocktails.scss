@@ -10,7 +10,12 @@ h1 {
 
 
 .list_ingredient {
+  padding: 1em;
   margin-top: 3em;
-  background-color: rgba(227, 235, 247, 0.3);
+  background-color: rgba(227, 235, 247, 0.4);
   border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  ul {
+    margin: 2em;
+  }
 }
