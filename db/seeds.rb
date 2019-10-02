@@ -11,7 +11,7 @@ puts "create ingredients"
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 list = JSON.parse(open(url).read)
 10.times do
-  index = rand(0..159)
+  index = rand(0..99)
   Ingredient.create(name: list["drinks"][index]["strIngredient1"])
 end
 puts "end"
